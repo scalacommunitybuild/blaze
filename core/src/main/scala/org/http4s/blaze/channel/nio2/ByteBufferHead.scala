@@ -22,7 +22,7 @@ private[nio2] final class ByteBufferHead(channel: AsynchronousSocketChannel, buf
 
   override def writeRequest(data: ByteBuffer): Future[Unit] = {
 
-    if (!data.hasRemaining() && data.position > 0) {
+    if (!data.hasRemaining() && data.position() > 0) {
       logger.warn("Received write request with non-zero position but ZERO available" +
                  s"bytes at ${new Date} on org.http4s.blaze.channel $channel: $data")
       return Future.successful(())
