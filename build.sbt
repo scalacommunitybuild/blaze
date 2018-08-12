@@ -72,7 +72,7 @@ version in ThisBuild := "0.12.14-SNAPSHOT"
 
 scalaVersion in ThisBuild := "2.11.12"
 
-crossScalaVersions in ThisBuild := Seq("2.10.7", scalaVersion.value, "2.12.5")
+crossScalaVersions in ThisBuild := Seq("2.10.7", scalaVersion.value, "2.12.6")
 
 description in ThisBuild := "NIO Framework for Scala"
 
