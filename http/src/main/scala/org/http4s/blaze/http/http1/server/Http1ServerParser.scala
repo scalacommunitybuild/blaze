@@ -34,7 +34,7 @@ private[blaze] final class BlazeServerParser[Header](maxNonBody: Int)(
     headers.clear()
   }
 
-  override protected def submitRequestLine(
+  override def submitRequestLine(
       methodString: String,
       uri: String,
       scheme: String,
